@@ -518,34 +518,51 @@
 
 
 
-//   
-#include <stdio.h>  
-#include <stdlib.h>  
-#include <time.h>  
+// //   
+// #include <stdio.h>  
+// #include <stdlib.h>  
+// #include <time.h>  
 
-int main() {  
-    int number, guess, attempts = 0;  
+// int main() {  
+//     int number, guess, attempts = 0;  
     
-    // Seed the random number generator  
-    srand(time(0));  
-    number = rand() % 100 + 1;  // Random number between 1 and 100  
+//     // Seed the random number generator  
+//     srand(time(0));  
+//     number = rand() % 100 + 1;  // Random number between 1 and 100  
 
-    printf("Guess the number (between 1 and 100):\n");  
+//     printf("Guess the number (between 1 and 100):\n");  
 
-    do {  
-        printf("Enter your guess: ");  
-        scanf("%d", &guess);  
-        attempts++;  
+//     do {  
+//         printf("Enter your guess: ");  
+//         scanf("%d", &guess);  
+//         attempts++;  
 
-        if (guess > number) {  
-            printf("Too high! Try again.\n");  
-        } else if (guess < number) {  
-            printf("Too low! Try again.\n");  
-        } else {  
-            printf("Congratulations! You guessed the number %d in %d attempts.\n", number, attempts);  
-        }  
-    } while (guess != number);  
+//         if (guess > number) {  
+//             printf("Too high! Try again.\n");  
+//         } else if (guess < number) {  
+//             printf("Too low! Try again.\n");  
+//         } else {  
+//             printf("Congratulations! You guessed the number %d in %d attempts.\n", number, attempts);  
+//         }  
+//     } while (guess != number);  
 
-    return 0;  
-}  
+//     return 0;  
+// }  
+
+
+#include <stdio.h>
+#include <stdbool.h>
+
+
+int main() {
+
+    char name[50];
+    printf("Enter your name");
+    scanf("%s", &name);
+
+    printf("Oh nice to meet you %s", name);
+
+
+    return 0;
+}
 
